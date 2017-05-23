@@ -54,7 +54,7 @@ insert into member values('sey', '777', '성은영', '2017,05,01');
 select * from member order by member_id
 select * from review
 
-
+DELETE FROM member WHERE visit_date < '2017,05,20'
 
 
 

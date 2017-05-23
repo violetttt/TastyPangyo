@@ -7,10 +7,11 @@
 <style type="text/css">
 @import url('https://fonts.googleapis.com/css?family=Philosopher');
 h1{font-family: 'Philosopher', sans-serif; text-align:center;}
-body{background-color : Bisque;}
+body{background-color : Bisque; text-align : center;}
 </style>
 </head>
 <body>
+<jsp:include page="/jsp/common.jsp"/>
 <h1>Login</h1>
 <form action="/TastyRoad/login">
 <table>

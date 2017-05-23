@@ -19,22 +19,22 @@ public class MemberDaoImpl implements MemberDao{
 	String sql = "config.mapper.mapper.";
 	
 	@Override
-	public int insertMember(SqlSession session, Member member) {
+	public String insertMember(SqlSession session, Member member) {
 		return session.selectOne(sql+"insertMember", member);
 	}
 
 	@Override
-	public int updateMember(SqlSession session, Member member) {
+	public String updateMember(SqlSession session, Member member) {
 		return session.selectOne(sql+"updateMember", member);
 	}
 
 	@Override
-	public int deleteMember(SqlSession session, String memberId) {
+	public String deleteMember(SqlSession session, String memberId) {
 		return session.selectOne(sql+"deleteMember", memberId);
 	}
 
 	@Override
-	public int deleteMemberByVisitDate(SqlSession session, Date visitDate) {
+	public String deleteMemberByVisitDate(SqlSession session, Date visitDate) {
 		return session.selectOne(sql+"deleteMemberByVisitDate", visitDate);
 	}
 

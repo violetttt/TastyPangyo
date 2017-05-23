@@ -10,10 +10,10 @@ import tp.vo.Member;
 
 public interface MemberDao  {
 	
-	int insertMember(SqlSession session, Member member);				// member객체를 받아 회원정보 추가
-	int updateMember(SqlSession session, Member member);				// member객체를 받아 회원정보 수정
-	int deleteMember(SqlSession session, String memberId);				// 회원id를 받아 회원정보 삭제 - 사용자
-	int deleteMemberByVisitDate(SqlSession session, Date visitDate);		// 접속일로 회원정보삭제 - 관리자
+	String insertMember(SqlSession session, Member member);				// member객체를 받아 회원정보 추가
+	String updateMember(SqlSession session, Member member);				// member객체를 받아 회원정보 수정
+	String deleteMember(SqlSession session, String memberId);				// 회원id를 받아 회원정보 삭제 - 사용자
+	String deleteMemberByVisitDate(SqlSession session, Date visitDate);		// 접속일로 회원정보삭제 - 관리자
 	
 	
 	List<Member> selectAllMember(SqlSession session);										// 모든 회원 조회
